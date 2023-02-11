@@ -1,0 +1,12 @@
+doctype html
+block vars
+html(lang='ja')#html
+	head
+		include ../_include/_head
+	body(class=bodyClass)
+		include ../_include/_header
+		//- include ../_include/_navigation
+		main.l-main
+			block contents
+		//- include ../_include/_footer
+

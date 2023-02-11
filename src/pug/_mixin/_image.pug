@@ -1,0 +1,82 @@
+//- mixin
+- var pcSize = 561
+mixin sourceImg(fileName, extension = 'png', altName = '', type = 'multi', pagePath = '')
+	- if (type == 'multi')
+		picture&attributes(attributes)
+			source(
+				type='image/webp',
+				media=`(min-width:${pcSize}px)`,
+				srcset=`
+					${imgPath}${pagePath}${fileName}-pc.webp 1x,
+					${imgPath}${pagePath}${fileName}-pc@2x.webp 2x
+				`
+				)
+			source(
+				type='image/webp',
+				media=`(max-width:${pcSize - 1}px)`,
+				srcset=`
+					${imgPath}${pagePath}${fileName}-sp.webp 1x,
+					${imgPath}${pagePath}${fileName}-sp@2x.webp 2x
+				`
+			)
+			source(
+				media=`(min-width:${pcSize}px)`,
+				srcset=`
+					${imgPath}${pagePath}${fileName}-pc.${extension} 1x,
+					${imgPath}${pagePath}${fileName}-pc@2x.${extension} 2x
+				`
+			)
+			source(
+				media=`(max-width:${pcSize - 1}px)`,
+				srcset=`
+					${imgPath}${pagePath}${fileName}-sp.${extension} 1x,
+					${imgPath}${pagePath}${fileName}-sp@2x.${extension} 2x
+						`
+			)
+			img&attributes(attributes)(src=`${imgPath}${pagePath}${fileName}-pc.${extension}`, alt=altName)
+	- else if (type == 'simple')
+		picture&attributes(attributes)
+			source(
+				type='image/webp',
+				media=`(min-width:${pcSize}px)`,
+				srcset=`
+					${imgPath}${pagePath}${fileName}-pc.webp
+				`
+				)
+			source(
+				type='image/webp',
+				media=`(max-width:${pcSize - 1}px)`,
+				srcset=`
+					${imgPath}${pagePath}${fileName}-sp.webp
+				`
+			)
+			source(
+				media=`(min-width:${pcSize}px)`,
+				srcset=`
+					${imgPath}${pagePath}${fileName}-pc.${extension}
+				`
+			)
+			source(
+				media=`(max-width:${pcSize - 1}px)`,
+				srcset=`
+					${imgPath}${pagePath}${fileName}-sp.${extension}
+						`
+			)
+			img&attributes(attributes)(src=`${imgPath}${pagePath}${fileName}-pc.${extension}`, alt=altName)
+	- else
+		picture
+			source(
+				type='image/webp',
+				srcset=`
+					${imgPath}${pagePath}${fileName}.webp 1x,
+					${imgPath}${pagePath}${fileName}@2x.webp 2x
+				`
+			)
+			img&attributes(attributes)(
+				srcset=`
+					${imgPath}${pagePath}${fileName}.${extension} 1x,
+					${imgPath}${pagePath}${fileName}@2x.${extension} 2x
+				`,
+				src=`${imgPath}${pagePath}${fileName}.${extension}`,
+				alt=altName
+			)
