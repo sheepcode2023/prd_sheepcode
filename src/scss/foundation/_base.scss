@@ -1,3 +1,4 @@
+@use "../variables" as var;
 * {
 	font-family: inherit;
 	font-size: inherit;
@@ -5,9 +6,11 @@
 	line-height: inherit;
 }
 html {
-	overflow-x: hidden;
 }
 
+body {
+	font-family: var.$ff_NotoSansJp;
+}
 
 a {
 	text-decoration: none;
