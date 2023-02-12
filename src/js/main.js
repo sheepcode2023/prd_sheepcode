@@ -2,4 +2,4 @@
 
 import $ from "jquery";
 
-import { test } from "./view/_test";
+import { navigation } from "./view/_navigation";
