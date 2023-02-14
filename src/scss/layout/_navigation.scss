@@ -1,0 +1,43 @@
+@use "../variables" as var;
+@use "../modules/" as mod;
+// ナビゲーションのCSS
+.l-navigation {
+	background: var.$color_yellow;
+	width: 100%;
+	height: calc(var(--vh, 1vh) * 100);
+	padding: 70px 0 0;
+	position: fixed;
+	top: 60px;
+	transform: translateX(100%);
+	transition: transform 0.3s ease-in-out;
+	z-index: 10;
+	@include mod.mq("md") {
+		display: none;
+	}
+	&.is-active {
+		transform: translateX(0);
+	}
+	&__items {
+		margin: 0 auto;
+		width: max-content;
+	}
+	&__item {
+		&:nth-of-type(n + 2) {
+			margin-top: 20px;
+		}
+		a {
+			color: var.$color_black;
+			font-size: 25px;
+			font-weight: bold;
+			letter-spacing: 0.04em;
+		}
+	}
+	&__grayBlock {
+		width: 100%;
+		height: 70px;
+		background: var.$color_gray;
+		position: absolute;
+		bottom: 0;
+	}
+}
+// ナビゲーションのCSS

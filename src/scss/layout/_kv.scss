@@ -1,0 +1,25 @@
+@use "../variables" as var;
+@use "../modules/" as mod;
+
+.l-home {
+	&__kv {
+		background: var.$color_gray;
+		min-height: 600px;
+		position: relative;
+		@include mod.mq("md") {
+			min-height: 640px;
+		}
+		&::before {
+			content: "";
+			display: block;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: calc(600px) 100vw 0 0;
+			border-color: var.$color_yellow transparent transparent transparent;
+			@include mod.mq("md") {
+				border-width: calc(640px) 100vw 0 0;
+			}
+		}
+	}
+}

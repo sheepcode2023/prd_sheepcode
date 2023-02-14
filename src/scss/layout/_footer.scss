@@ -1,0 +1,20 @@
+@use "../variables" as var;
+@use "../modules/" as mod;
+// ナビゲーションのCSS
+.l-footer {
+	height: 60px;
+	background: var.$color_gray;
+	filter: drop-shadow(0px 0px 0px rgba(51, 51, 51, 0.16));
+	@include mod.mq("md") {
+		height: 80px;
+	}
+	&__text {
+		color: var.$color_black;
+		line-height: 60px;
+		text-align: center;
+		@include mod.mq("md") {
+			font-size: 18px;
+			line-height: 80px;
+		}
+	}
+}
