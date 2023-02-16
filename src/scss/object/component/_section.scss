@@ -1,0 +1,8 @@
+@use "../../variables" as var;
+@use "../../modules/" as mod;
+.c-section {
+	padding: 60px 20px 70px;
+	@include mod.mq("md") {
+		padding: 70px 0 100px;
+	}
+}

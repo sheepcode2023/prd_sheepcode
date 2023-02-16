@@ -1,0 +1,70 @@
+@use "../../variables" as var;
+@use "../../modules/" as mod;
+
+.p-home {
+	&__concept {
+		background: var.$color_white;
+	}
+	&__conceptIntro {
+		font-size: 15px;
+		letter-spacing: 0.06em;
+		line-height: 30px;
+		color: var.$color_darkGray;
+		width: fit-content;
+		margin: 0 auto;
+		@include mod.mq("md") {
+			font-size: 16px;
+		}
+		span {
+			color: var.$color_yellow;
+			font-weight: bold;
+		}
+	}
+	&__conceptItems {
+		width: 100%;
+		max-width: 1037px;
+		margin: 30px auto 0;
+		display: flex;
+		flex-direction: column;
+		gap: 30px 0;
+		@include mod.mq("md") {
+			margin: 60px auto 0;
+			gap: 0 40px;
+			flex-direction: row;
+		}
+	}
+	&__conceptItem {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		@include mod.mq("md") {
+			width: calc((100% / 3) - 26.6666666px);
+		}
+	}
+	&__conceptTop {
+		width: 250px;
+		height: 250px;
+		border-radius: 50%;
+		background: var.$color_yellow;
+		filter: drop-shadow(3px 3px 10px rgba(51, 51, 51, 0.16));
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 0 24px;
+		margin-bottom: 20px;
+	}
+	&__conceptIcon {
+		width: 50px;
+		margin-bottom: 15.5px;
+	}
+	&__conceptHeading {
+		font-size: 20px;
+		font-weight: bold;
+		line-height: 30px;
+	}
+	&__conceptText {
+		font-size: 15px;
+		line-height: 30px;
+	}
+}

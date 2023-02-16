@@ -1,5 +1,6 @@
 "use strict";
+import { slicklib } from "./libs/_slick.min";
 
-import $ from "jquery";
-
+// lib
 import { navigation } from "./view/_navigation";
+import { slick } from "./view/_slick";

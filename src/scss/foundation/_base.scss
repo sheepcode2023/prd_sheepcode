@@ -4,6 +4,7 @@
 	font-size: inherit;
 	font-weight: inherit;
 	line-height: inherit;
+	box-sizing: border-box;
 }
 html {
 	overflow-x: hidden;
@@ -11,9 +12,16 @@ html {
 
 body {
 	font-family: var.$ff_NotoSansJp;
+	color: var.$color_darkGray;
+}
+img {
+	width: 100%;
+	object-fit: contain;
+	vertical-align: bottom;
 }
 
 a {
+	color: var.$color_black;
 	text-decoration: none;
 	transition: opacity 0.3s;
 	&:hover {
