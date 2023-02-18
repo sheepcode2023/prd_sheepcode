@@ -1,0 +1,19 @@
+@use "../variables/" as var;
+
+.p-home__works {
+	.slick-dots {
+		li {
+			button::before {
+				font-size: 50px;
+				color: var.$color_yellow;
+				opacity: 1;
+			}
+			&.slick-active {
+				button::before {
+					color: var.$color_black;
+					opacity: 1;
+				}
+			}
+		}
+	}
+}

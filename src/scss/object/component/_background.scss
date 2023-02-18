@@ -1,0 +1,11 @@
+@use "../../variables" as var;
+@use "../../modules/" as mod;
+.c-backgroundGray {
+	background: var.$color_gray03;
+}
+.c-backgroundYellow {
+	background: var.$color_yellow;
+}
+.c-backgroundYellow02 {
+	background: rgba($color: var.$color_yellow, $alpha: 0.3);
+}

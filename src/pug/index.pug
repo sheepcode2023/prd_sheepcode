@@ -43,7 +43,7 @@ block contents
 				img(src=imgPath+"home/img_tech11.webp", alt="html")
 			li.l-home__techItem
 				img(src=imgPath+"home/img_tech12.webp", alt="html")
-	section.p-home__concept.c-section
+	section.c-section
 		h2.c-heading.u-textAlign__center  Concept
 		p.p-home__conceptIntro
 			| Sheep Codeは現役フロントエンジニアが運営するコーディング、CMS開発に特化したWEB構築サービスです。
@@ -80,5 +80,120 @@ block contents
 						| 運用/更新サポート
 				.p-home__conceptBottom
 					p.p-home__conceptText 納品後の定期的な運用/更新のご依頼も可能です。Sheep Codeではただの運用ではなくSEOの向上施策なども合わせて提案可能です。
+	section.p-home__works.c-section.c-backgroundGray
+		h2.c-heading.u-textAlign__center Works
+		ul.p-home__worksItems#js-home-slick02
+			li.p-home__worksItem
+				a(href="http://")
+					img(src=imgPath+"home/img_works01.webp", alt="works画像")
+			li.p-home__worksItem
+				a(href="http://")
+					img(src=imgPath+"home/img_works02.webp", alt="works画像")
+			li.p-home__worksItem
+				a(href="http://")
+					img(src=imgPath+"home/img_works03.webp", alt="works画像")
+		.p-home__worksBottom
+			.c-button--md.c-backgroundYellow.p-home__worksButton
+				a(href="http://")
+					| More View
+	section.c-section.c-backgroundYellow02
+		h2.c-heading.u-textAlign__center Price
+		.p-home__price
+			article.p-home__priceDetail
+				h3.p-home__priceHeading コーディング代行
+				dl.p-home__priceItem
+					dt.p-home__priceTitle トップページ
+					dd.p-home__priceDetails
+						span.p-home__priceDetails--price 30,000円 〜
+						span.p-home__priceDetails--text デザインをもとにトップページのコーディングをおこないます。ヘッダー、フッターなどの共通パーツも含みます。
+				dl.p-home__priceItem
+					dt.p-home__priceTitle 下層ページ(1ページ)
+					dd.p-home__priceDetails
+						span.p-home__priceDetails--price 10,000円 〜
+						span.p-home__priceDetails--text デザインをもとにトップページのコーディングをおこないます。ヘッダーやフッターなどの共通パーツが必要な場合、共有パーツを含めたお見積りになります。
+				dl.p-home__priceItem
+					dt.p-home__priceTitle 共通パーツ
+					dd.p-home__priceDetails
+						span.p-home__priceDetails--price 70,000円 〜
+						span.p-home__priceDetails--text デザインをもとにトップページのコーディングをおこないます。ヘッダー、フッターなどの共通パーツも含みます。
+				.p-home__priceAnnotation
+					ul.p-home__priceAnnotationItems
+						li.p-home__priceAnnotationItem 価格は税抜価格です。
+						li.p-home__priceAnnotationItem スマートフォン、タブレッド対応は別途お見積りとなります。
+						li.p-home__priceAnnotationItem JavaScript,JQueryを用いた実装は別途お見積りとなります。
+						li.p-home__priceAnnotationItem 即納をご希望の場合、別途費用をいただきます。
+			article.p-home__priceDetail
+				h3.p-home__priceHeading CMS構築
+				dl.p-home__priceItem
+					dt.p-home__priceTitle WordPress設置初期費用
+					dd.p-home__priceDetails
+						span.p-home__priceDetails--price 20,000円 〜
+						span.p-home__priceDetails--text ご指定のサーバーにWordpressのインストールをおこないます。また実装で必要となるプラグインの設定も含まれます。
+				dl.p-home__priceItem
+					dt.p-home__priceTitle WordPressテーマ開発
+					dd.p-home__priceDetails
+						span.p-home__priceDetails--price 70,000円 〜
+						span.p-home__priceDetails--text Wordpressのテーマ開発をおこないます。ページのボリューム数に応じて御見積りとなります。
+				dl.p-home__priceItem
+					dt.p-home__priceTitle カスタムフィールド設置
+					dd.p-home__priceDetails
+						span.p-home__priceDetails--price 7,000円 〜
+						span.p-home__priceDetails--text カスタムフィールドの設置をおこないます。事前に運用方法をお伺いし最適なご提案をさせていただきます。
+				dl.p-home__priceItem
+					dt.p-home__priceTitle メタ情報設定
+					dd.p-home__priceDetails
+						span.p-home__priceDetails--price 20,000円 〜
+						span.p-home__priceDetails--text Meta関連の設定をおこないます。
+				.p-home__priceAnnotation
+					ul.p-home__priceAnnotationItems
+						li.p-home__priceAnnotationItem 価格は税抜価格です。
+						li.p-home__priceAnnotationItem WordPress実装のみのご依頼も可能です。コーディングデータは別途ご用意いただきます。
+						li.p-home__priceAnnotationItem 実装の際に有償プラグインが必要となる場合は、別途費用がかかります。
+	section.c-section
+		h2.c-heading.u-textAlign__center Information
+		.p-home__infomation
+			.p-home__infomationWrapper
+				article.p-home__infomationNews
+					h3.p-home__infomationHeading NEWS
+					.p-home__infomationNewsContainer
+						ul.p-home__infomationNewsItems
+							li.p-home__infomationNewsItem
+								a(href="http://").p-home__infomationNewsItemWrapper
+									.p-home__infomationNewsTop
+										span.p-home__infomationNewsDate 2023/xx/xx
+										span.p-home__infomationNewsGenre お知らせ
+									.p-home__infomationNewsBottom
+										p.p-home__infomationNewsText テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+							li.p-home__infomationNewsItem
+								a(href="http://").p-home__infomationNewsItemWrapper
+									.p-home__infomationNewsTop
+										span.p-home__infomationNewsDate 2023/xx/xx
+										span.p-home__infomationNewsGenre お知らせ
+									.p-home__infomationNewsBottom
+										p.p-home__infomationNewsText テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+							li.p-home__infomationNewsItem
+								a(href="http://").p-home__infomationNewsItemWrapper
+									.p-home__infomationNewsTop
+										span.p-home__infomationNewsDate 2023/xx/xx
+										span.p-home__infomationNewsGenre お知らせ
+									.p-home__infomationNewsBottom
+										p.p-home__infomationNewsText テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+							li.p-home__infomationNewsItem
+								a(href="http://").p-home__infomationNewsItemWrapper
+									.p-home__infomationNewsTop
+										span.p-home__infomationNewsDate 2023/xx/xx
+										span.p-home__infomationNewsGenre お知らせ
+									.p-home__infomationNewsBottom
+										p.p-home__infomationNewsText テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+							li.p-home__infomationNewsItem
+								a(href="http://").p-home__infomationNewsItemWrapper
+									.p-home__infomationNewsTop
+										span.p-home__infomationNewsDate 2023/xx/xx
+										span.p-home__infomationNewsGenre お知らせ
+									.p-home__infomationNewsBottom
+										p.p-home__infomationNewsText テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+
+
+
 
 

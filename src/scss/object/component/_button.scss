@@ -1,0 +1,15 @@
+@use "../../variables" as var;
+@use "../../modules/" as mod;
+
+.c-button {
+	&--md {
+		width: 100px;
+		height: 70px;
+		border-radius: 50px;
+		filter: drop-shadow(3px 3px 10px rgba(0, 0, 0, 0.16));
+		min-width: 300px;
+		@include mod.mq("md") {
+			min-width: 300px;
+		}
+	}
+}

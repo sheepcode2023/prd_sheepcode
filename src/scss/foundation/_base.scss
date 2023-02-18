@@ -21,6 +21,8 @@ img {
 }
 
 a {
+	display: inline-block;
+	width: 100%;
 	color: var.$color_black;
 	text-decoration: none;
 	transition: opacity 0.3s;

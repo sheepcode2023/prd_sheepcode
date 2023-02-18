@@ -67,4 +67,201 @@
 		font-size: 15px;
 		line-height: 30px;
 	}
+
+	&__worksItem {
+		width: 100%;
+		max-width: 450px;
+		margin: 0 20px;
+	}
+	&__worksBottom {
+		width: 100%;
+		max-width: 1246px;
+		margin: 70px auto 0;
+		@include mod.mq("md") {
+			margin: 90px auto 0;
+		}
+	}
+	&__worksButton {
+		text-align: center;
+		line-height: 70px;
+		font-size: 20px;
+		font-weight: bold;
+		margin: 0 auto;
+		@include mod.mq("md") {
+			margin: initial;
+			margin-left: auto;
+		}
+	}
+	&__price {
+		width: 100%;
+		max-width: 900px;
+		background: var.$color_white;
+		margin: 0 auto;
+		padding: 40px 20px 50px;
+		@include mod.mq("md") {
+			padding: 70px 144px 100px;
+		}
+	}
+
+	&__priceDetail {
+		margin-bottom: 70px;
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+
+	&__priceHeading {
+		width: fit-content;
+		margin: 0 auto 40px;
+		font-size: 25px;
+		font-weight: bold;
+		letter-spacing: 0.04em;
+		position: relative;
+		vertical-align: middle;
+		&::before {
+			content: "";
+			display: inline-block;
+			background: var.$color_yellow;
+			width: 3px;
+			height: 25px;
+			margin-right: 10px;
+			position: relative;
+			top: 3px;
+		}
+	}
+	&__priceItem {
+		padding-bottom: 10px;
+		border-bottom: 1px solid var.$color_gray04;
+		&:nth-of-type(n + 2) {
+			padding-top: 20px;
+			@include mod.mq("md") {
+				padding-top: 30px;
+			}
+		}
+	}
+	&__priceTitle {
+		font-size: 20px;
+		font-weight: bold;
+		letter-spacing: 0.04em;
+		margin-bottom: 10px;
+	}
+
+	&__priceDetails {
+		width: 100%;
+		gap: 0 40px;
+		letter-spacing: 0.04em;
+		@include mod.mq("md") {
+			display: flex;
+		}
+
+		&--price {
+			display: inline-block;
+			width: 100%;
+			max-width: max-content;
+			line-height: 25px;
+			margin-bottom: 10px;
+			@include mod.mq("md") {
+				margin-bottom: 0;
+			}
+		}
+		&--text {
+			display: inline-block;
+			width: 100%;
+			max-width: max-content;
+			line-height: 25px;
+		}
+	}
+	&__priceAnnotation {
+		margin-top: 20px;
+	}
+	&__priceAnnotationItems {
+		font-size: 11px;
+		letter-spacing: 0.06em;
+		line-height: 16px;
+	}
+
+	&__priceAnnotationItem {
+		&::before {
+			content: "※";
+		}
+	}
+	&__infomation {
+		width: 100%;
+		max-width: 1010px;
+		margin: 70px auto 0;
+	}
+	&__infomationNews {
+		max-width: 600px;
+	}
+	&__infomationHeading {
+		width: fit-content;
+		margin: 0 auto 30px;
+		font-size: 30px;
+		font-weight: bold;
+		letter-spacing: 0.04em;
+		position: relative;
+		vertical-align: middle;
+		font-family: var.$ff_roboto;
+		&::before {
+			content: "";
+			display: inline-block;
+			background: var.$color_yellow;
+			width: 3px;
+			height: 30px;
+			margin-right: 10px;
+			position: relative;
+			top: 3.5px;
+		}
+	}
+	&__infomationNewsContainer {
+		padding: 10px;
+		background: var.$color_gray05;
+		@include mod.mq("md") {
+			padding: 30px;
+		}
+	}
+	&__infomationNewsItems {
+		background: var.$color_white;
+		border-radius: 5px;
+		padding: 35px 20px;
+		@include mod.mq("md") {
+			padding: 35px 40px;
+		}
+	}
+
+	&__infomationNewsItem {
+		margin-bottom: 20px;
+		padding-bottom: 10px;
+		border-bottom: 1px solid var.$color_gray04;
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+
+	&__infomationNewsTop {
+		margin-bottom: 10px;
+	}
+
+	&__infomationNewsDate {
+		font-size: 14px;
+		font-weight: bold;
+		display: inline-block;
+		margin-right: 10px;
+	}
+
+	&__infomationNewsGenre {
+		background: var.$color_yellow;
+		font-weight: bold;
+		font-size: 11px;
+		padding: 2px 8px;
+		border-radius: 20px;
+	}
+	&__infomationNewsText {
+		font-size: 14px;
+		line-height: 27px;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 2;
+		overflow: hidden;
+	}
 }

@@ -12,3 +12,11 @@ $("#js-home-slick01").slick({
 	pauseOnFocus: true, // スライダーをフォーカスした時にスライドを停止させるか
 	pauseOnHover: true, // スライダーにマウスホバーした時にスライドを停止させるか
 });
+$("#js-home-slick02").slick({
+	variableWidth: true,
+	centerMode: true,
+	autoplay: true, // 自動でスクロール
+	autoplaySpeed: 5000, // 自動再生のスライド切り替えまでの時間を設定
+	arrows: false, // 矢印非表示
+	dots: true,
+});
