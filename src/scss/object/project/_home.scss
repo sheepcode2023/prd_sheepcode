@@ -213,6 +213,13 @@
 			top: 3.5px;
 		}
 	}
+
+	&__infomationWrapper {
+		@include mod.mq("md") {
+			display: flex;
+			gap: 0 60px;
+		}
+	}
 	&__infomationNewsContainer {
 		padding: 10px;
 		background: var.$color_gray05;
@@ -263,5 +270,18 @@
 		-webkit-box-orient: vertical;
 		-webkit-line-clamp: 2;
 		overflow: hidden;
+	}
+
+	&__infomationSns {
+		width: 100%;
+		max-width: 350px;
+		margin-top: 40px;
+		@include mod.mq("md") {
+			margin-top: 0;
+		}
+	}
+	&__infomationSnsContainer {
+		border: 1px solid var.$color_black;
+		min-height: 600px;
 	}
 }
