@@ -194,24 +194,7 @@
 		max-width: 600px;
 	}
 	&__infomationHeading {
-		width: fit-content;
-		margin: 0 auto 30px;
-		font-size: 30px;
-		font-weight: bold;
-		letter-spacing: 0.04em;
-		position: relative;
-		vertical-align: middle;
 		font-family: var.$ff_roboto;
-		&::before {
-			content: "";
-			display: inline-block;
-			background: var.$color_yellow;
-			width: 3px;
-			height: 30px;
-			margin-right: 10px;
-			position: relative;
-			top: 3.5px;
-		}
 	}
 
 	&__infomationWrapper {
@@ -283,5 +266,92 @@
 	&__infomationSnsContainer {
 		border: 1px solid var.$color_black;
 		min-height: 600px;
+	}
+
+	&__contact {
+		width: 100%;
+		margin: auto;
+		max-width: 900px;
+		padding: 40px 0 60px;
+		border: 1px solid var.$color_gray06;
+		@include mod.mq("md") {
+			padding: 60px 0 70px;
+		}
+	}
+	&__contactHeading {
+		margin-bottom: 40px;
+	}
+	&__contactMain {
+		max-width: 700px;
+		margin: 0 auto;
+	}
+	&__contactItems {
+		padding: 0 20px;
+		@include mod.mq("md") {
+			padding: 0;
+		}
+	}
+
+	&__contactItem {
+		margin-bottom: 10px;
+		padding-bottom: 10px;
+		border-bottom: 1px solid var.$color_gray06;
+		&:last-of-type {
+			margin-bottom: 0;
+			border-bottom: none;
+		}
+	}
+
+	&__contactHead {
+		display: flex;
+		align-items: center;
+		margin-bottom: 15px;
+	}
+
+	&__contactHeadCompany {
+		font-size: 18px;
+		font-weight: bold;
+		letter-spacing: 0.04em;
+		margin-right: 10px;
+	}
+
+	&__contactHeadGenre {
+		// background: var.$color_yellow;
+		font-weight: bold;
+		font-size: 11px;
+		padding: 5px 14px;
+		border-radius: 20px;
+		&.--optional {
+			border: 1px solid var.$color_gray06;
+		}
+	}
+
+	&__contactValue {
+		input {
+			display: inline-block;
+			width: 100%;
+			border-radius: 5px;
+			border: 1px solid var.$color_gray06;
+			height: 35px;
+			padding: 5px 10px;
+			outline: none;
+		}
+		textarea {
+			display: inline-block;
+			width: 100%;
+			border-radius: 5px;
+			border: 1px solid var.$color_gray06;
+			min-height: 300px;
+			resize: none;
+			padding: 10px;
+			outline: none;
+		}
+	}
+	&__contactButton {
+		font-size: 20px;
+		font-weight: bold;
+		text-align: center;
+		line-height: 40px;
+		margin: 30px auto 0;
 	}
 }

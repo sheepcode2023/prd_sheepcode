@@ -43,7 +43,7 @@ block contents
 				img(src=imgPath+"home/img_tech11.webp", alt="html")
 			li.l-home__techItem
 				img(src=imgPath+"home/img_tech12.webp", alt="html")
-	section.c-section
+	section.c-section.js-home-section
 		h2.c-heading.u-textAlign__center  Concept
 		p.p-home__conceptIntro
 			| Sheep Codeは現役フロントエンジニアが運営するコーディング、CMS開発に特化したWEB構築サービスです。
@@ -80,7 +80,7 @@ block contents
 						| 運用/更新サポート
 				.p-home__conceptBottom
 					p.p-home__conceptText 納品後の定期的な運用/更新のご依頼も可能です。Sheep Codeではただの運用ではなくSEOの向上施策なども合わせて提案可能です。
-	section.p-home__works.c-section.c-backgroundGray
+	section.p-home__works.c-section.c-backgroundGray.js-home-section
 		h2.c-heading.u-textAlign__center Works
 		ul.p-home__worksItems#js-home-slick02
 			li.p-home__worksItem
@@ -96,7 +96,7 @@ block contents
 			.c-button--md.c-backgroundYellow.p-home__worksButton
 				a(href="http://")
 					| More View
-	section.c-section.c-backgroundYellow02
+	section.c-section.c-backgroundYellow02.js-home-section
 		h2.c-heading.u-textAlign__center Price
 		.p-home__price
 			article.p-home__priceDetail
@@ -149,12 +149,12 @@ block contents
 						li.p-home__priceAnnotationItem 価格は税抜価格です。
 						li.p-home__priceAnnotationItem WordPress実装のみのご依頼も可能です。コーディングデータは別途ご用意いただきます。
 						li.p-home__priceAnnotationItem 実装の際に有償プラグインが必要となる場合は、別途費用がかかります。
-	section.c-section
+	section.c-section.js-home-section
 		h2.c-heading.u-textAlign__center Information
 		.p-home__infomation
 			.p-home__infomationWrapper
 				article.p-home__infomationNews
-					h3.p-home__infomationHeading NEWS
+					h3.c-heading--md.p-home__infomationHeading NEWS
 					.p-home__infomationNewsContainer
 						ul.p-home__infomationNewsItems
 							li.p-home__infomationNewsItem
@@ -193,7 +193,55 @@ block contents
 									.p-home__infomationNewsBottom
 										p.p-home__infomationNewsText テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
 				article.p-home__infomationSns
-					h3.p-home__infomationHeading Twitter
+					h3.c-heading--md.p-home__infomationHeading Twitter
 					.p-home__infomationSnsContainer
 						a.twitter-timeline(href='https://twitter.com/sheepcoding777?ref_src=twsrc%5Etfw') Tweets by sheepcoding777
 						script(async='', src='https://platform.twitter.com/widgets.js', charset='utf-8')
+	section.c-section.js-home-section
+		h2.c-heading.u-textAlign__center Contact
+		.p-home__contact
+			.p-home__contactWrapper
+				h3.c-heading--sm.p-home__contactHeading お客様情報
+				form.p-home__contactMain(action="")
+					dl.p-home__contactItems
+						.p-home__contactItem
+							dt.p-home__contactHead
+								span.p-home__contactHeadCompany 会社名
+								span.p-home__contactHeadGenre.--optional 任意
+							dd.p-home__contactValue
+								input(type="text", name="")
+						.p-home__contactItem
+							dt.p-home__contactHead
+								span.p-home__contactHeadCompany お名前
+								span.p-home__contactHeadGenre.c-backgroundYellow 必須
+							dd.p-home__contactValue
+								input(type="text", name="")
+						.p-home__contactItem
+							dt.p-home__contactHead
+								span.p-home__contactHeadCompany おなまえ
+								span.p-home__contactHeadGenre.c-backgroundYellow 必須
+							dd.p-home__contactValue
+								input(type="text", name="")
+						.p-home__contactItem
+							dt.p-home__contactHead
+								span.p-home__contactHeadCompany 電話番号
+								span.p-home__contactHeadGenre.c-backgroundYellow 必須
+							dd.p-home__contactValue
+								input(type="text", name="")
+						.p-home__contactItem
+							dt.p-home__contactHead
+								span.p-home__contactHeadCompany メールアドレス
+								span.p-home__contactHeadGenre.c-backgroundYellow 必須
+							dd.p-home__contactValue
+								input(type="text", name="")
+						.p-home__contactItem
+							dt.p-home__contactHead
+								span.p-home__contactHeadCompany お問い合わせ内容
+								span.p-home__contactHeadGenre.c-backgroundYellow 必須
+							dd.p-home__contactValue
+								textarea(name="", cols="30", rows="10")
+					.c-button--sm.c-backgroundYellow.p-home__contactButton
+						a(href="http://")
+							| 送信する
+
+

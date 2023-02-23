@@ -37,8 +37,8 @@
 		transform: translateX(-50%) translateY(-50%);
 		border-bottom: 5px solid var.$color_black;
 		@include mod.mq("md") {
-			font-size: 80px;
-			line-height: 130px;
+			font-size: 70px;
+			line-height: 110px;
 		}
 	}
 	&__news {

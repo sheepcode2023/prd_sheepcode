@@ -7,6 +7,11 @@
 	background-color: var.$color_white;
 	filter: drop-shadow(0px 2px 7px rgba(51, 51, 51, 0.16));
 	position: relative;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 15;
 	@include mod.mq("md") {
 		height: 80px;
 		padding: 0 60px;

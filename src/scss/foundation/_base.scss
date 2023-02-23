@@ -1,3 +1,4 @@
+@use "../modules/" as mod;
 @use "../variables" as var;
 * {
 	font-family: inherit;
@@ -28,5 +29,12 @@ a {
 	transition: opacity 0.3s;
 	&:hover {
 		opacity: 0.8;
+	}
+}
+
+.l-main {
+	margin-top: 60px;
+	@include mod.mq("md") {
+		margin-top: 80px;
 	}
 }
