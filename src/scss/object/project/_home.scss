@@ -191,6 +191,7 @@
 		margin: 70px auto 0;
 	}
 	&__infomationNews {
+		width: 100%;
 		max-width: 600px;
 	}
 	&__infomationHeading {
@@ -348,10 +349,38 @@
 		}
 	}
 	&__contactButton {
+		display: block;
 		font-size: 20px;
 		font-weight: bold;
 		text-align: center;
 		line-height: 40px;
-		margin: 30px auto 0;
+		margin: 20px auto 0;
+		border: none;
+		cursor: pointer;
+		transition: opacity 0.3s;
+		color: var.$color_black;
+		&:hover {
+			opacity: 0.8;
+		}
 	}
+}
+
+// コンタクトフォームのCSS
+
+.mw_wp_form .error {
+	padding: 8px 0 0;
+	color: var.$color_yellow !important;
+	font-weight: bold;
+}
+
+.contact_finish {
+	width: fit-content;
+	margin: 0 auto;
+}
+
+.contact_finish p {
+	color: var.$color_darkGray;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 1.5;
 }

@@ -14,3 +14,17 @@ home_fade_targets.forEach((el) => {
 		},
 	});
 });
+
+const header_height = $("header").height();
+console.log(header_height)
+$(function () {
+	$('a[href^="#"]').click(function () {
+		var adjust = header_height;
+		var speed = 400;
+		var href = $(this).attr("href");
+		var target = $(href == "#" || href == "" ? "html" : href);
+		var position = target.offset().top - adjust;
+		$("body,html").animate({ scrollTop: position }, speed, "swing");
+		return false;
+	});
+});
