@@ -4,7 +4,7 @@
 .l-navigation {
 	background: var.$color_yellow;
 	width: 100%;
-	height: calc(var(--vh, 1vh) * 100);
+	height: calc(100% - 60px);
 	padding: 70px 0 0;
 	position: fixed;
 	top: 60px;

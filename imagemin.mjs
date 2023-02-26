@@ -12,6 +12,6 @@ keepfolder(["src/img/**/*.{jpg,png,gif,svg,webp}"], {
     }),
   ],
   replaceOutputDir: (output) => {
-    return output.replace(/img\//, "../dist/assets/img/");
+    return output.replace(/img\//, "../dist/dev/assets/img/");
   },
 });

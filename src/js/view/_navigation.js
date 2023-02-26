@@ -6,3 +6,12 @@ if (spmenu_trigger) {
 		sp_navigation.classList.toggle("is-active");
 	});
 }
+
+const sp_navItems = document.querySelectorAll(".l-navigation__item");
+
+sp_navItems.forEach((sp_navItem) => {
+	sp_navItem.addEventListener("click", () => {
+		spmenu_trigger.classList.toggle("is-active");
+		sp_navigation.classList.toggle("is-active");
+	});
+});

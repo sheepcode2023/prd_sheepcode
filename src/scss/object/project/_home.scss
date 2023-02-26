@@ -258,10 +258,10 @@
 
 	&__infomationSns {
 		width: 100%;
-		max-width: 350px;
 		margin-top: 40px;
 		@include mod.mq("md") {
 			margin-top: 0;
+			max-width: 350px;
 		}
 	}
 	&__infomationSnsContainer {

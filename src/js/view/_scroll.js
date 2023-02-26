@@ -16,7 +16,6 @@ home_fade_targets.forEach((el) => {
 });
 
 const header_height = $("header").height();
-console.log(header_height)
 $(function () {
 	$('a[href^="#"]').click(function () {
 		var adjust = header_height;
